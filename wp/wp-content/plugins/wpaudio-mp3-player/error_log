@@ -1,3 +1,0 @@
-[01-Sep-2011 19:39:29] PHP Fatal error:  Call to undefined function get_option() in /home/zlflajke/public_html/wp/wp-content/plugins/wpaudio-mp3-player/wpaudio.php on line 33
-[20-Jan-2012 18:49:00] PHP Fatal error:  Call to undefined function get_option() in /home/zlflajke/public_html/wp/wp-content/plugins/wpaudio-mp3-player/wpaudio.php on line 33
-[16-Aug-2012 20:54:36] PHP Fatal error:  Call to undefined function get_option() in /home/zlflajke/public_html/wp/wp-content/plugins/wpaudio-mp3-player/wpaudio.php on line 33

@@ -1,0 +1,46 @@
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        var input = $('input[type=text], textarea');
+    
+                        input.focus(function() {
+                            $(this).val('');
+                        }).blur(function() {
+                            var el = $(this);
+                            if(el.val() == '')
+                                el.val(el.attr('data-default'));
+                        });
+    
+                        $("#contactForm").submit(function() {
+                            $.post("scripts/mail.php", $("#contactForm").serialize(),
+                                function(data) {
+                                    if (data) {
+                                        $("#contactForm").hide('slide', function() {$("#contactFormSuccessResponse").show('slide');});
+                                    } else {
+                                        $("#contactForm").hide('slide', function() {$("#contactFormErrorResponse").show('slide');});
+                                    }
+                                }
+                            );
+                            return false;
+                        });
+                    });
+                </script>
+                <div class="hide" id="contactFormSuccessResponse">
+                    <br>
+                    <br>
+                    <p>thank you, your message has been sent and you will hear back from us shortly</p>
+                    <br>
+                    <br>
+                </div>
+                <div class="hide" id="contactFormErrorResponse">
+                    <br>
+                    <br>
+                    <p>an error has occured, please try again later</p>
+                    <br>
+                    <br>
+                </div>
+                <form id="contactForm" action="scripts/mail.php" method="post" enctype="text/plain">
+                    <p><input type="text" name="name" value="your name" data-default="your name"></p>
+                    <p><input type="text" name="email" value="your email" data-default="your email"></p>
+                    <p><textarea name="message" value="your message" data-default="your message">your message</textarea></p>
+                    <p class="submit"><input class="submit" type="submit" value="send"></p>
+                </form>

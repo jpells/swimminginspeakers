@@ -1,0 +1,2 @@
+[26-Aug-2011 00:50:15] PHP Fatal error:  Call to undefined function get_mostpopular() in /home/zlflajke/public_html/wp/wp-content/themes/zincious/footer.php on line 28
+[26-Aug-2011 01:49:46] PHP Fatal error:  Call to undefined function get_mostpopular() in /home/zlflajke/public_html/wp/wp-content/themes/zincious/footer.php on line 28

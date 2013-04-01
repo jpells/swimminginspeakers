@@ -1,0 +1,12 @@
+body                   {background:url(../images/main-bg.jpg) no-repeat center 77px #241706;}
+
+#content				{margin-right:8px;}
+#sidebar				{margin-left:8px;}
+
+.content-title-wrap,
+.post 					{width:685px;}
+
+.post-share				{width:615px;}
+
+.comment-wrap,
+.comment-wrap-inside 	{float:left;}

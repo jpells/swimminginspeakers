@@ -1,0 +1,305 @@
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+			background: transparent; border: 0; margin: 0; padding: 0; vertical-align: baseline;}
+h1, h2, h3, h4, h5, h6 	{clear: both; font-weight: normal;}
+ol, ul 			{list-style: none;}
+blockquote 		{quotes: none;}
+blockquote:before, blockquote:after {content: ''; content: none;}
+del 			{text-decoration: line-through;}
+/* tables still need 'cellspacing="0"' in the markup */
+table 			{border-collapse: collapse; border-spacing: 0;}
+a img 			{border: none;}
+:focus                  {outline:0;}
+
+/* Layouts
+-------------------------------------------------------------- */
+/* Clearfix */
+#navigation .wrap:after,
+#body .wrap:after,
+#content:after,
+.type-page:after,
+.post:after,
+.page:after,
+.post-share:after,
+.comment-wrap:after,
+.comment-wrap-inside:after{content:".";display:block; height:0; clear:both; visibility:hidden } 
+#footer:after           {content:".";display:block; clear:both; visibility:hidden } 
+
+
+/* Layouts */
+.alignleft		{float:left;}
+.alignright		{float:right;}
+.aligncenter		{margin:0 auto;}
+body 			{line-height: 1; font-family: Georgia, Helvetica, Arial; font-size:14px; color:#222;}
+.wrap			{width:940px; margin:0 auto;}
+#header .wrap		{width:940px; height:156px;
+                        background:#efefef;}
+#body .wrap             {background:#FBF8E9;}
+#content		{float:right; width:685px; margin:30px 15px 0 0;}
+#sidebar		{float:left; width:185px; margin:30px 0 50px 15px; font-size:12px;}
+
+/* Colors & Backgrounds
+-------------------------------------------------------------- */
+/* Colors */
+.post-title,
+a			{color:#C48F44; text-decoration:none;}
+#site-name a		{color:#000;}
+#site-name a:hover,
+.wp-caption p		{color:#999;}
+
+
+/* Borders */
+#page-nav		{border-top:1px dotted #efefef;}
+.home-post		{border-top:1px dotted #bfbfbf;}
+
+
+/* Effects
+-------------------------------------------------------------- */
+#post-comment           {text-shadow:0 1px 0 #fff;}
+
+/* Top Menu
+-------------------------------------------------------------- */
+#top-menu               {height:28px; background:url(../images/top-nav.png) repeat-x;}
+#visit-shop             {display:inline-block; width:165px; height:22px; text-indent:-99999em; background:url(../images/visit-shop.png) no-repeat; margin:2.5px 0 0 0;}
+
+/* Header
+-------------------------------------------------------------- */
+#header-site-name		{float:left; font-size:23px; text-transform:uppercase; letter-spacing:3px; margin:65px 0 0 20px;}
+#header-site-name a            {color:#fff;}
+
+/* Navigation
+-------------------------------------------------------------- */
+/* The Navigation Site-Name */
+#site-name a {float:left; width:149px; height:19px; background:url(../images/site-name.png) no-repeat; text-indent:-99999em;
+                        margin:17px 45px 0 12px}
+
+/* The Navigation */
+#navigation             {background:url(../images/navigation.png) repeat-x;}
+
+#navigation ul          {float:left; background:url(../images/navigation-separator.png) no-repeat right 0;}
+#navigation ul li	{float:left; position:relative; background:url(../images/navigation-separator.png) no-repeat 0 0; padding-left:2px;}
+#navigation li a	{float:left; padding:19px 22px; font-size:11px; text-transform:uppercase; letter-spacing:2px; color:#CDC3AD; overflow:hidden;}
+#navigation li.current-menu-item a,
+#navigation li a:hover  {background:url(../images/navigation-hover.png) repeat-x 0 bottom; color:#CDC3AD;}
+#navigation li a:hover  {color:#fff;}
+
+
+#navigation ul ul	{display:none; position:absolute; left:2px; top:49px; width:150px; border-top:1px solid #8C6229;}
+#navigation ul ul li	{float:left; position:relative; padding:0;}
+#navigation ul ul li a	{float:left; width:130px; padding:8px 10px; background:url(../images/navigation-dropdown.png);}
+#navigation ul ul li a:hover{background:#2F1E09;}
+#navigation ul ul ul	{position:absolute; top:0; left:150px; border-top:none;}
+
+/* Searchbox */
+#s                      {border:0; float:right; margin:15px 0 0 0; width:160px; height:16px; background:url(../images/searchbox.png); padding:3px 20px 3px 5px; color:#B6ADA0; font:12px Georgia;}
+
+/* Body
+-------------------------------------------------------------- */
+body                   {background:url(../images/main-bg.png) no-repeat center 77px #241706;}
+
+/* Content
+-------------------------------------------------------------- */
+.content-title-wrap     {overflow:hidden; border-bottom:1px solid #CCBEA7; padding-bottom:10px;}
+.content-title-wrap .ess-pagination             {margin:0;}
+#content-title          {float:left; font-size:14px; text-transform:uppercase; color:#725425; letter-spacing:2px;}
+
+#body a:hover		{text-decoration:underline;}
+.home-post		{padding:10px 0 0 0;}
+.post			{padding:30px 0 20px 0; border-bottom:1px solid #DED8CC;}
+.post:first-child       {padding-top:0;}
+
+/* Post-Date */
+.post-time              {float:left; width:50px; height:150px; background:url(../images/post-date.png) no-repeat; margin:0 20px 0 0; text-align:center; color:#fff; text-shadow:0 1px 0 #333;}
+.post-month             {display:block; padding:10px 0 2px 0; text-transform:uppercase; font-size:11px; letter-spacing:1.5px;}
+.post-date              {display:block; padding:2px 0; font:bold 23px Arial;}
+.post-comment-popup     {padding:11px 0 22px 0;} 
+.post-comment-popup-link{font:bold 15px Arial; color:#fff; text-decoration:none;} 
+ 
+/* Post-Thumb */
+.post-thumb		{display:block; margin:0 0 17px 0;}
+.post-content-wrap	{float:left; width:615px;}
+
+/* Post-Title */
+.post-title,
+.post-title a           {margin:0 0 10px 0; line-height:1.4; font-size:28px; color:#6D4D1C;}
+.home-post .post-title	{font-size:20px;}
+#body .home-post .post-title a:hover{text-decoration:none;}
+.single .post-title     {font-size:30px; line-height:1.6; margin-top:-10px;}
+
+/* Post-Meta */
+.post-meta		{font:11px Helvetica, Arial; margin:0 0 10px 0; line-height:1; color:#A7A49E;}
+.post-meta span		{padding:0 10px 0 0; margin:0 10px 0 0; border-right:1px solid #A7A49E;}
+.post-meta a            {font-weight:bold;}
+
+/* Content */
+.the-content		{font:12px Helvetica, Arial; line-height:1.6; color:#4D4946;}
+.the-content h1,
+.the-content h2,
+.the-content h3,
+.the-content h4,
+.the-content h5,
+.the-content h6		{margin:30px 0 10px 0;}
+.the-content p,
+.the-content ul,
+.the-content ol		{margin:0 0 20px 0;}
+.the-content ul li	{margin:0 0 0 20px; list-style:square;}
+.the-content ol li	{margin:0 0 0 20px; list-style:decimal;}
+.the-content blockquote	{margin:0 0 10px 0; padding:15px 30px 10px 40px; font:italic 16px Georgia; line-height:1.8; background:#EFEAD1; border-left:5px solid #CFC69B;}
+.wp-caption		{margin:0 auto 10px auto; padding:5px 0 5px 0;}
+.wp-caption img		{margin:0 0 5px 5px; padding:0; text-align:center;}
+.wp-caption p		{margin:0 5px; padding:0; font-size:10px; text-align:center;}
+.the-content .alignleft	{margin:0 20px 10px 0;}
+.the-content .alignright{margin:0 0 10px 20px;}
+#s-404			{font-size:14px; width:500px; padding:5px;}
+
+/* Read More*/
+.the-content p.read-more{margin:15px 0 0 0;}
+.more-link              {float:left; width:81px; height:16px; text-indent:-99999em; background:url(../images/more-link.png) no-repeat;}
+
+/* Tweet This */
+.post-content-wrap .tweet-this             {display:block; margin:40px 0 0 0;}
+.post-time .tweet-this  {display:block; margin:20px 0 0 0;}
+
+/* Related Posts */
+#related-posts          {display:block; padding:20px 0 0 0;}
+#related-posts h2       {color:#846A40; font-size:14px; text-transform:uppercase; letter-spacing:2px; border-bottom:1px solid #DAD4C8; padding-bottom:5px; margin-bottom:15px;}
+#related-posts ul li    {background:url(../images/relatedposts-li.png) no-repeat 0 0; margin:0 0 10px 0; padding-left:20px; font-size:13px;}
+
+/* Facebook Like */
+.facebook-like          {float:left; width:100%;}
+
+/* Post Share */
+.post-share		{padding:15px 0 20px 0; border-bottom:1px solid #DAD4C8;}
+.post-share a		{margin:10px 20px 0 0; float:left; width:32px; height:32px; text-indent:-99999em;}
+.share-facebook a	{background:url(../images/share-facebook.png) no-repeat;}
+.share-twitter a	{background:url(../images/share-twitter.png) no-repeat;}
+.share-digg a           {background:url(../images/share-digg.png) no-repeat;}
+.share-reddit a         {background:url(../images/share-reddit.png) no-repeat;}
+.share-tumblr a		{background:url(../images/share-tumblr.png) no-repeat;}
+.share-rss a		{background:url(../images/share-rss.png) no-repeat;}
+.share-stumbleupon a	{background:url(../images/share-stumbleupon.png) no-repeat;}
+.share-delicious a	{background:url(../images/share-delicious.png) no-repeat;}
+
+/* Post Author Box */
+.post-author-box	{padding:10px 20px 20px 20px; margin:20px 0; line-height:1.6; background:#EFEAD1; border:1px solid #CFC69B;}
+.post-author-box .avatar{float:left; margin:5px 10px 10px 0; padding:3px;}
+
+
+/* Comment */
+#comments-title		{margin:20px 20px 20px 0; font-size:20px; color:#725221; text-transform:uppercase; font-size:14px; letter-spacing:3px;}
+#comments-title span    {font-size:30px; float:left; margin:-12px 10px 0 0; letter-spacing:0;}
+.comment-wrap		{margin-bottom:10px; border:1px solid #E2DDC7; padding:1px;}
+.comment-wrap-inside    {background:#F3F0E1; padding:10px;}
+.commentlist ul li	{margin:0 0 0 50px;}
+.the-content p.comment-author         {margin:0 0 5px 0;}
+.comment-date         {font:normal 9px Helvetica, Arial; color:#A5A297;}
+
+.comment-avatar		{margin:0 10px 10px 0; float:left; width:40px; background:#fff;}
+.comment-content	{float:left;}
+
+.depth-1 .comment-content{width:540px;}
+.depth-2 .comment-content{width:490px;}
+.depth-3 .comment-content{width:440px;}
+.depth-4 .comment-content{width:390px;}
+.depth-5 .comment-content{width:340px;}
+.depth-6 .comment-content{width:290px;}
+.depth-7 .comment-content{width:240px;}
+.depth-8 .comment-content{width:190px;}
+.depth-9 .comment-content{width:140px;}
+.depth-10 .comment-content{width:90px;}
+
+.comment-reply-link     {float:right; font:bold 11px Helvetica, Arial; background:url(../images/reply.png) no-repeat right 2px; padding:0 13px 0 0;}
+
+
+#comment-closed h2      {color:#6D4D1C; font-size:25px; margin:30px 0 10px 0;}
+#comment-closed p       {font:12px Helvetica, Arial; line-height:1.6; color:#4D4946;}
+
+/* Comment Form */
+#respond		{padding:20px 0;}
+.cancel-comment-reply   {margin:0 0 10px 0; display:block; text-align:right;}
+#reply-title		{margin:0 0 20px 0; font-size:14px; text-transform:uppercase; letter-spacing:2px; color:#7E6336; border-bottom:1px solid #DAD4C8; padding-bottom:10px;}
+.comment-notes		{margin:0 0 10px 0; font-size:12px; font-style:italic;}
+#respond p		{margin:0 0 5px 0;}
+#respond label		{margin:0 0 2px 0; display:inline-block; width:70px; float:left; font-size:12px;}
+#author,
+#url,
+#email,
+#respond textarea	{padding:5px; font-family:Helvetica, Arial; font-size:12px; border:none;}
+#author,
+#url,
+#email                  {width:311px; height:13px; background:url(../images/comment-input.png) no-repeat #333;}
+#respond textarea       {width:391px; height:144px; background:url(../images/comment.png) no-repeat; resize:none;}
+.required		{display:none;}
+.form-allowed-tags	{font-size:12px; line-height:1.6;}
+#required-field         {font-style:italic; font-size:10px; padding-left:402px; color:#A9A59D;}
+#submit                 {display:inline-block; width:138px; height:25px; text-indent:-99999em; border:0; cursor:pointer; margin:-5px 0 0 70px; background:url(../images/submit.png) no-repeat;}
+
+/* Page Navigation */
+.ess-pagination         {float:right; margin:10px 0 20px 0;}
+.ess-pagination a,
+.ess-pagination .current{float:left; margin:0 2px 0 0; font:10px Helvetica, Arial; background:url(../images/pagenavi.png); height:12px; line-height:1.3; padding:0 4px 0 4px; border:1px solid #D9B883;}
+.ess-pagination .previous-posts-link    {text-indent:-99999em; width:71px; height:14px; background:url(../images/prev-page.png) no-repeat; padding:0; margin:0 3px 0 0; border:0;}
+.ess-pagination .next-posts-link        {text-indent:-99999em; width:49px; height:14px; background:url(../images/next-page.png) no-repeat; padding:0; margin:0 0 0 1px; border:0;}
+.ess-pagination .current{color:#fff; background:url(../images/pagenavi-active.png); border:1px solid #796145;}
+
+/* Sidebar
+-------------------------------------------------------------- */
+#sidebar a              {color:#635F59;}
+#sidebar a:hover        {color:#C48F44; text-decoration:none;}
+.widget			{line-height:1.5; background:#C8B9A4; margin:0 0 10px 0; padding-bottom:4px;}
+h4.widgettitle		{font-size:11.5px; display:block; text-transform:uppercase; margin:0 0 5px 0; color:#fff; padding:3px 8px 4px 8px; background:url(../images/widgettitle-bg.png) no-repeat #fff;}
+.tagcloud,
+#wp-calendar,
+.widget>ul              {margin:-5px 4px 0 4px; background:url(../images/widget-bg.png); display:block; border:1px solid #B1A189; border-top:0;}
+.widget-ul-wrap         {background:url(../images/widget-bg-bottom.png) repeat-x 0 bottom; display:block;}
+.widget li		{padding:5px 10px; margin:0 5px; line-height:1.5; border-bottom:1px dashed #CBC3B4;}
+.widget li:last-child   {border:none;}
+.widget li li		{margin:0 0 0 15px; padding:5px 0 0 0; list-style:square; border:none;}
+
+.ess_recentcomments li,
+.widget_recent_entries li      {padding-left:12px; background:url(../images/widget-disc.png) no-repeat 0px 10px; font:11.5px helvetica, Arial; line-height:16px;}
+.ess_recentcomments li:hover,
+.widget_recent_entries li:hover      {background:url(../images/widget-disc-hover.png) no-repeat 0px 10px;}
+
+
+.widget.widget_categories ul li,
+.widget.widget_archive ul li{padding:0;}
+.widget.widget_categories ul li:first-child,
+.widget.widget_archive ul li:first-child{padding-top:1px;}
+.widget.widget_categories ul li:last-child,
+.widget.widget_archive ul li:last-child{padding-bottom:1px;}
+.widget.widget_categories ul li:hover,
+.widget.widget_archive ul li:hover{background:#B88036; margin:-1px -1px 2px -1px; padding:0 6px; border:none;}
+#sidebar .widget_categories a,
+#sidebar .widget_archive a{padding:3px 0; display:block; color:#333;}
+#sidebar .widget_categories a:hover,
+#sidebar .widget_archive a:hover{color:#fff; background:#B88036;}
+
+.tagcloud               {padding:5px;}
+
+#wp-calendar		{width:177px;}
+#wp-calendar caption	{margin:0 0 20px 0;}
+#wp-calendar td		{padding:4.5px; text-align:center;}
+
+/* Footer
+-------------------------------------------------------------- */
+#footer                 {margin:20px 0 0 0; height:55px; background:url(../images/footer.png) repeat-x 0 top;}
+#footer .wrap           {position:relative; color:#817871;}
+
+#navigation-footer      {float:left; margin:15px 0 0 0;}
+#navigation-footer li   {float:left;}
+#navigation-footer li a{float:left; font-size:10px; text-transform:uppercase; color:#75634A; padding:0 10px 0 5px; background:url(../images/bottom-navigation-dot.png) no-repeat right center;}
+#navigation-footer li:last-child a{background:none;}
+
+#copyright		{float:left; position:absolute; top:32px; left:5px; font-size:11px;}
+
+#footer-follow          {position:absolute; top:25px; left:330px; font-size:11px; letter-spacing:1px;}
+#footer-follow .title   {float:left; padding:3px 0 0 0;}
+#footer-facebook        {display:inline-block; width:76px; height:16px; text-indent:-99999em; background:url(../images/footer-facebook.png) no-repeat; margin:0 20px;}
+#footer-twitter         {display:inline-block; width:77px; height:15px; text-indent:-99999em; background:url(../images/footer-twitter.png) no-repeat;}
+
+#credit                 {position:absolute; top:0; right:0; font-size:11px; margin-top:10px;}
+#dapurpixel             {float:right; width:95px; height:19px; text-indent:-99999em; background:url(../images/dapurpixel.png) no-repeat; margin-top:5px;}

@@ -1,0 +1,14 @@
+.post,
+.post-share,
+.comment-wrap,
+.comment-wrap-inside	{overflow:hidden;}
+
+.the-content ol li		{margin:0 0 0 25px;}
+
+.post-share li 			{float:left;}
+
+#visit-shop,
+#submit					{float:left;}
+
+#credit					{position:relative; float:right; width:140px;}
+#credit p				{text-align:right;}

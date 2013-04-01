@@ -1,0 +1,151 @@
+body {
+	font-family: georgia, 'times new roman', serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #656565;
+}
+
+
+
+/* 
+LINKS 
+*/
+
+a:link,
+a:active,
+a:visited {
+	text-decoration: none;
+	color: #956a98;
+}
+	
+a:hover {
+	text-decoration: none;
+	color: #7b4977;
+} 
+
+h2.entry-title-index a:link,
+h2.entry-title-index a:active,
+h2.entry-title-index a:visited {
+	text-decoration: none;
+	color: #acacac;
+}
+
+h2.entry-title-index a:hover {
+	text-decoration: none;
+	color: #888888;
+} 
+
+
+
+/* 
+HEADLINES
+*/
+
+h2, #navigation {	
+	margin: 0;
+	font-family: georgia, 'times new roman', serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 24px;
+}
+
+h2.entry-title, h2.entry-title-index, h2.comment-title {
+	color: #acacac;
+}
+
+h2.entry-title, h2.comment-title {
+	margin: 0 0 9px 0;
+}
+
+h2.entry-title-index {
+	line-height: 17px !important;
+	margin: 9px 0 0 0  !important;
+}
+
+
+
+/* 
+TEXT ELEMENTS
+*/
+
+p {
+	margin: 0 0 9px 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul li {
+	margin: 0 0 13px 0;
+}
+
+ul#navigation {
+	margin: 36px 0 36px 0;
+	padding: 0 0 0 2px;
+}
+
+ul#navigation li {
+	margin: 0;
+}
+
+.meta-data {
+	line-height: 11px;
+	margin: 0 0 9px 0;
+}
+
+.comment-data {
+	line-height: 11px;
+	margin: 9px 0 0 0;
+}
+
+.entry-date, .comment-date, .sub, input, textarea {
+	font-family: georgia, 'times new roman', serif;
+	font-size: 10px !important;
+	line-height: 12px;
+	font-style: italic;
+	color: #2e2e2e;
+}
+
+
+
+/* 
+FORMS
+*/
+
+textarea, input {
+	padding: 2px;
+	border: 1px solid #be9fc0;
+	background-color: #be9fc0;
+	font-style: normal !important;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+textarea {
+	width: 210px;
+	height: 120px;
+	margin: 1px 0 6px 0;
+	padding: 2px;
+	max-width: 670px;
+}
+
+input {
+	width: 135px;
+	margin: 0 2px 6px 0;
+}
+
+.submit {
+	background-color: #956a98;
+	border: 1px solid #956a98;
+	width: 135px;
+}
+
+.submit:hover {
+	cursor: pointer;
+	background-color: #7b4977;
+	border: 1px solid #7b4977;
+}

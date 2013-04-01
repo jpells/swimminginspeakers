@@ -1,0 +1,36 @@
+#news {
+  width: 960px;
+  margin: 0 auto 20px;
+  background: url(../images/post-sep.gif) repeat-x scroll bottom;
+  overflow: hidden;
+  padding-bottom: 2px;
+}
+#news li {
+  width: 233px;
+  background: url(../images/gallsep.gif) repeat-y scroll right;
+  overflow: hidden;
+  float: left;
+  margin-right: 9px;
+  padding-bottom: 15px;
+}
+#news p {
+  padding: 0 5px 0 2px;
+}
+#news img {
+  background: #fff;
+  border: 1px solid #d6d4d8;
+  padding: 5px;
+  margin-bottom: 8px;
+}
+.titlef {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.titlef a, .titlef a:visited {
+  color: #393939 !important;
+}
+.no-margin {
+  margin-right: 0 !important;
+  background: none !important;
+}
+

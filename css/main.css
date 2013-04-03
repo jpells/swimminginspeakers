@@ -109,12 +109,35 @@ html {
     text-align: center;
 }
 
-div.cornerimage   { position:relative; /* etc. */ }
-img.positioned  { position:fixed; height:200px; }
-img#topleft     { top:0; left:0; }
-img#topright    { top:0; right:0; }
-img#bottomleft  { bottom:0; left:0; }
-img#bottomright { bottom:0; right:0; }
+div.cornerimage {
+    position:relative;
+}
+
+img.positioned {
+    position:fixed;
+    height:200px;
+    z-index: -1;
+}
+
+img#topleft {
+    top:0;
+    left:0;
+}
+
+img#topright {
+    top:0;
+    right:0;
+}
+
+img#bottomleft {
+    bottom:0;
+    left:0;
+}
+
+img#bottomright {
+    bottom:0;
+    right:0;
+}
 
 iframe {
     align: middle;

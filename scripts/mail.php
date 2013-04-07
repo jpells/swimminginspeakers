@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['email']) && isset($_POST['message']) && isset($_POST['name'])) {
     $to = 'swimminginspeakers@gmail.com';
-    $subject = 'Email from Website';
+    $subject = 'swimming in speakers website contact';
     $message = $_POST['message'];
     $headers = 'From: ' . $_POST['name'] . '<' . $_POST['email'] . '>' . "\r\n" .
         'Reply-To: ' . $_POST['name'] . '<' . $_POST['email'] . '>' . "\r\n" .

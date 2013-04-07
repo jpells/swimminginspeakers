@@ -109,13 +109,16 @@ html {
     text-align: center;
 }
 
+a {
+    cursor: pointer;
+}
+
 div.cornerimage {
     position:relative;
 }
 
 img.positioned {
     position:fixed;
-    height:200px;
     z-index: -1;
 }
 
